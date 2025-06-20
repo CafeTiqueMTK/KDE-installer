@@ -145,8 +145,10 @@ base_packages="$DM_PACKAGE \
 case "$DISTRO" in
     fedora)
         echo -e "${GREEN}Installation de KDE sur Fedora...${RESET}"
-        sudo dnf groupinstall -y "KDE Plasma Workspaces" "KDE Applications"
-        sudo dnf install -y $base_packages
+        sudo dnf install -y \
+            @kde-plasma-workspaces \
+            @kde-applications \
+            $base_packages
         
         if [ -n "$EXTRA_PACKAGES" ]; then
             echo -e "${GREEN}Installation des packages facultatifs...${RESET}"
