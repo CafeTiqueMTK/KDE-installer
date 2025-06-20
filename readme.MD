@@ -18,7 +18,7 @@ An interactive script to install a complete KDE Plasma desktop environment with 
 ## Usage
 
 ```bash
-git clone https://github.com/<your-username>/kde-installer.git
-cd kde-installer/scripts
+git clone https://github.com/CafeTiqueMTK/kde-installer.git
+cd kde-installer
 chmod +x install-kde.sh
 ./install-kde.sh
